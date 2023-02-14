@@ -41,7 +41,7 @@ void Tree::insert(int data, node* Node = root, int x = 250, int y = 50, int a = 
 {
         node* new_node = new node; 
         new_node->shape.setRadius(20);
-        new_node->shape.setFillColor(sf::Color::Green);
+        new_node->shape.setFillColor(sf::Color::White);
         new_node->left = new_node->right = new_node->parent = NULL; 
         new_node->data = data; 
         new_node->shape.setPosition(sf::Vector2f(x, y));
