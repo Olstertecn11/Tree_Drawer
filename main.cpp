@@ -64,7 +64,7 @@ void Tree::insert(int data, node* Node = root, int x = 250, int y = 50, int a = 
                         new_node->parent->rightone.setFillColor(sf::Color::Red);
                         new_node->parent->rightone.setRotation(230);
                         new_node->parent->rightone.setPosition(sf::Vector2f(a+50, b+40));
-			new_node->text.setText(sf::Vector2f(a+50, b+40), to_string(new_node->data));
+			new_node->text.setText(sf::Vector2f(x+50, y+50), to_string(new_node->data));
                 }
         }
         else if (data < Node->data)
@@ -80,7 +80,7 @@ void Tree::insert(int data, node* Node = root, int x = 250, int y = 50, int a = 
                         new_node->parent->leftone.setFillColor(sf::Color::Red);
                         new_node->parent->leftone.setRotation(130);
                         new_node->parent->leftone.setPosition(sf::Vector2f(a, b));
-			new_node->text.setText(sf::Vector2f(a, b), to_string(new_node->data));
+			new_node->text.setText(sf::Vector2f(x-50, y+50), to_string(new_node->data));
                 }
         }
 }

@@ -27,6 +27,7 @@ void textNode::setText(sf::Vector2f pos, std::string val){
   text.setStyle(sf::Text::Bold);
   text.setString(val);
   sf::FloatRect textRect = text.getLocalBounds();
-  text.setOrigin((textRect.width/2)-12, (textRect.height/2)-5);
+  text.setOrigin((textRect.width/2)-18, (textRect.height/2)-8);
+  /* text.setOrigin((textRect.width/2)-12, (textRect.height/2)-5); */
   text.setPosition(pos);
 }
